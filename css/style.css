@@ -1,0 +1,263 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html,body
+{
+  height: 100%;
+}
+
+/* Classes auxiliares (boot css) [classes que irao ser utilizadas durante todo o projeto]*/
+
+.container
+{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+.w33
+{
+  width: 33.3%;
+}
+
+.w50
+{
+  width: 50%;
+}
+
+.clear
+{
+  clear: both;
+}
+
+.center
+{
+  float: center;
+}
+
+.left
+{
+  float: left;
+}
+
+.right
+{
+  float: right;
+}
+
+/* Classes desse site */
+
+/* Header do site */
+
+header
+{
+  padding: 10px 0;
+}
+
+.logo h2
+{
+  font-weight: normal;
+  font-size: 23px;
+}
+
+nav.menu-desktop ul
+{
+  position: relative;
+  top: 10px;
+}
+
+nav.menu-desktop li
+{
+  display: inline-block;
+  padding: 0 15px;
+}
+
+nav.menu-desktop a
+{
+  color: #000;
+  text-decoration: none;
+}
+
+nav.menu-desktop a:hover
+{
+  text-decoration: underline;
+}
+
+/* section main */
+
+section.main-bg
+{
+  position: relative;
+  width: 100%;
+  padding: 200px 0;
+  background-image: url('../images/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+section.main-bg > .container /* Chamando exclusivamente oque esta dentro do container */
+{
+  position: relative;
+  z-index: 2;
+}
+
+.overlay
+{
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  left: 0;
+  top: 0;
+}
+
+section.main-bg h2
+{
+  color: #57ceca;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+section.main-bg p
+{
+  text-align: left;
+  color: #FFF;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+section.diferenciais
+{
+  padding: 30px 0;
+  text-align: center;
+}
+
+.line-text
+{
+  display: inline-block;
+}
+
+.line-text h2
+{
+  font-weight: normal;
+  font-size: 30px;
+  color: #57ceca;
+}
+
+.icones-diferenciais
+{
+  margin-top: 35px;
+}
+
+.box-icone-single
+{
+  padding: 0 30px;
+  margin-bottom: 20px;
+}
+
+.box-icone-single h2
+{
+  color: gold;
+  font-size: 40px;
+}
+
+.box-icone-single p
+{
+  font-size: 17px;
+}
+
+section.sobre-equipe
+{
+  padding: 30px 0;
+  background-color: #e5e5e5;
+}
+
+section.sobre-equipe > .container
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sobre-container p
+{
+  font-size: 17px;
+  margin-top: 10px;
+  color: #000;
+}
+
+.avatar-box
+{
+  padding: 50px 0;
+}
+
+.img-avatar
+{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-size: 100% 100%;
+}
+
+.descricao-avatar
+{
+  width: calc(100% -100px);
+  display: inline-block;
+  padding: 10px 0;
+}
+
+.img-avatar h3
+{
+  float: right;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.descricao-avatar p
+{
+  margin-right: 50px;
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 768px)
+{
+  .box-icone-single
+  {
+    width: 100%;
+  }
+
+  .w50
+  {
+    width: 100%;
+  }
+
+  .equipe-container
+  {
+    text-align: center;
+  }
+
+  .equipe-container p
+  {
+    text-align: left;
+    margin-top: 15px;
+  }
+  
+  .sobre-container
+  {
+    text-align: center;
+  }
+
+  .sobre-container p
+  {
+    text-align: left;
+  }
+ 
+}
