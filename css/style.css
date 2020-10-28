@@ -37,7 +37,7 @@ html,body
 
 .center
 {
-  float: center;
+  text-align: center;
 }
 
 .left
@@ -227,6 +227,38 @@ section.sobre-equipe > .container
   font-weight: lighter;
 }
 
+section.inscricao
+{
+  background: #57ceca;
+  padding: 15px 0;
+}
+
+h2.inscricao-texto
+{
+  color: #FFF;
+  font-weight: normal;
+}
+
+.inscricao-form input[type=text]
+{
+  width: calc(100% - 120px);
+  height: 40px;
+  background: #FFF;
+  border: none;
+  display: inline-block;
+}
+
+.inscricao-form input[type=submit]
+{
+  width: 120px;
+  height: 40px;
+  border: none;
+  color: #FFF;
+  cursor: pointer;
+  background: #1d6c64;
+  display: inline-block;
+}
+
 @media screen and (max-width: 768px)
 {
   .box-icone-single
@@ -237,6 +269,7 @@ section.sobre-equipe > .container
   .w50
   {
     width: 100%;
+    margin-bottom: 20px;
   }
 
   .equipe-container
