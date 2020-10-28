@@ -259,6 +259,34 @@ h2.inscricao-texto
   display: inline-block;
 }
 
+section.cards
+{
+  padding: 30px 0;
+}
+
+.card-single
+{
+  padding: 0 30px;
+}
+
+.card-single img
+{
+  width: 100%;
+}
+
+.card-single h3
+{
+  font-size: 17px;
+}
+
+.card-single p
+{
+  margin: 10px 0;
+  font-weight: lighter;
+  font-size: 15px;
+  padding-bottom: 20px;  
+}
+
 @media screen and (max-width: 768px)
 {
   .box-icone-single
@@ -291,6 +319,17 @@ h2.inscricao-texto
   .sobre-container p
   {
     text-align: left;
+  }
+
+  .descricao-avatar p
+  {
+    padding-bottom: 50px;
+    border-bottom: 2px solid #ccc;
+  }
+
+  .card-single
+  {
+    width: 100%;
   }
  
 }
