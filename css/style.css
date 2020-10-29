@@ -287,6 +287,46 @@ section.cards
   padding-bottom: 20px;  
 }
 
+footer.footer1
+{
+  background: #57ceca;
+  padding: 20px 0;
+  color: #FFF;
+}
+
+footer.footer1 h2
+{
+  font-weight: normal;
+  font-size: 23px;
+}
+
+footer.footer1 p
+{
+  margin-top: 8px;
+  font-weight: lighter;
+}
+
+footer.footer1 a
+{
+  display: block;
+  color: #FFF;
+}
+
+div.group-icons a
+{
+  font-size: 30px;
+  display: inline-block;
+  margin:15px 10px;
+}
+
+footer.footer2
+{
+  color: #FFF;
+  padding: 17px 0;
+  text-align: center;
+  background: #237a70;
+}
+
 @media screen and (max-width: 768px)
 {
   .box-icone-single
@@ -295,6 +335,12 @@ section.cards
   }
 
   .w50
+  {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .w33
   {
     width: 100%;
     margin-bottom: 20px;
@@ -330,6 +376,11 @@ section.cards
   .card-single
   {
     width: 100%;
+  }
+
+  footer.footer1
+  {
+    text-align: center;
   }
  
 }
