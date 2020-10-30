@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
   <script src="https://kit.fontawesome.com/d85bd54e53.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <title>Web design express</title>
 </head>
 <body>
@@ -18,16 +19,32 @@
       <nav class="menu-desktop right">
         <ul>
           <li>
-            <a href="">Home</a>
+            <a href="index.html">Home</a>
           </li>
           <li>
-            <a href="">Sobre</a>
+            <a href="sobre.html">Sobre</a>
           </li>
           <li>
             <a href="">Contato</a>
           </li>
         </ul>
       </nav><!--menu-desktop-->
+
+      <nav class="menu-mobile right">
+        <h2><i class="fa fa-bars"></i></h2>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="sobre.html">Sobre</a>
+          </li>
+          <li>
+            <a href="">Contato</a>
+          </li>
+        </ul>
+      </nav><!--menu-mobile right-->
+
       <div class="clear"></div><!--clear-->
     </div><!--container-->
   </header>
@@ -172,6 +189,13 @@
       <p>Todos os direitos reservados</p>
     </div><!--container-->
   </footer><!--footer2-->
+
+  <script>
+    $('nav.menu-mobile h2').click(function()
+    {
+      $('nav.menu-mobile ul').slideToggle();
+    });
+  </script>
 
 </body>
 </html>

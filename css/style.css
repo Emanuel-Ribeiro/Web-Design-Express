@@ -88,6 +88,16 @@ nav.menu-desktop a:hover
   text-decoration: underline;
 }
 
+nav.menu-mobile
+{
+  display: none;
+}
+
+nav.menu-mobile ul
+{
+  display: none;
+}
+
 /* section main */
 
 section.main-bg
@@ -346,6 +356,45 @@ footer.footer2
     margin-bottom: 20px;
   }
 
+  nav.menu-desktop
+  {
+    display: none;
+  }
+
+  nav.menu-mobile
+  {
+    display: block;
+  }
+
+  nav.menu-mobile h2
+  {
+    cursor: pointer;
+  }
+
+  nav.menu-mobile ul
+  {
+    width: 100%;
+    background: #FFF;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: 999;
+    text-align: center;
+  }
+
+  nav.menu-mobile li
+  {
+    padding: 8px 0;
+    border-top: 1px solid black;
+  }
+
+  nav.menu-mobile a
+  {
+    color: black;
+    text-decoration: none;
+    display: block;
+  }
+
   .equipe-container
   {
     text-align: center;
@@ -353,6 +402,7 @@ footer.footer2
 
   .equipe-container p
   {
+    padding: 0 5%;
     text-align: left;
     margin-top: 15px;
   }
@@ -364,6 +414,7 @@ footer.footer2
 
   .sobre-container p
   {
+    padding: 0 5%;
     text-align: left;
   }
 

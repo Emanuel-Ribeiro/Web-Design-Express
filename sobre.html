@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!--parei na aula 10-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="palavras,chave,do,meu,site">
+  <meta name="author" content="Emanuel Ribeiro">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+  <script src="https://kit.fontawesome.com/d85bd54e53.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <title>Web design express</title>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo left"><h2>Logomarca</h2></div><!--logo-->
+
+      <nav class="menu-desktop right">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="sobre.html">Sobre</a>
+          </li>
+          <li>
+            <a href="">Contato</a>
+          </li>
+        </ul>
+      </nav><!--menu-desktop-->
+
+      <nav class="menu-mobile right">
+        <h2><i class="fa fa-bars"></i></h2>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="sobre.html">Sobre</a>
+          </li>
+          <li>
+            <a href="">Contato</a>
+          </li>
+        </ul>
+      </nav><!--menu-mobile right-->
+
+      <div class="clear"></div><!--clear-->
+    </div><!--container-->
+  </header>
+
+  <footer class="footer1">
+    <div class="container">
+
+      <div class="w33 left">
+        <h2>Onde estamos?</h2>
+        <p><i class="fa fa-map-pin" aria-hidden="true"></i> Endereço away</p>
+        <p><i class="fa fa-phone" aria-hidden="true"></i> (61)9-9999-9999</p>
+      </div><!--w33-->
+
+      <div class="w33 left">
+        <h2>Links uteis</h2>
+        <a href="https://www.youtube.com/watch?v=_jXP3HlEpaY&t=85s&ab_channel=NEGUDUBECU">Gameplay milionaria</a>
+        <a href="https://stackoverflow.com/">Resolver bugs</a>
+        <a href="https://www.w3schools.com/">Duvidas Web</a>
+      </div><!--w33-->
+
+      <div class="w33 left">
+        <h2>Conecte-se conosco:</h2>
+        <div class="group-icons">
+          <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+        </div><!--group-icons-->
+      </div><!--w33-->
+
+      <div class="clear"></div>
+    </div><!--container-->
+  </footer><!--footer1-->
+
+  <footer class="footer2">
+    <div class="container">
+      <p>Todos os direitos reservados</p>
+    </div><!--container-->
+  </footer><!--footer2-->
+
+  <script>
+    $('nav.menu-mobile h2').click(function()
+    {
+      $('nav.menu-mobile ul').slideToggle();
+    });
+  </script>
+
+</body>
+</html>
