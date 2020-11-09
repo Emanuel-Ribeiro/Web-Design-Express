@@ -61,20 +61,27 @@ header
 
 .logo h2
 {
-  font-weight: normal;
   font-size: 23px;
+  font-weight: normal;
+}
+
+.logo a
+{
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 nav.menu-desktop ul
 {
-  position: relative;
   top: 10px;
+  position: relative;
 }
 
 nav.menu-desktop li
 {
-  display: inline-block;
   padding: 0 15px;
+  display: inline-block;
 }
 
 nav.menu-desktop a
@@ -102,46 +109,46 @@ nav.menu-mobile ul
 
 section.main-bg
 {
-  position: relative;
   width: 100%;
   padding: 200px 0;
-  background-image: url('../images/bg.png');
-  background-repeat: no-repeat;
+  position: relative;
+  text-align: center;
   background-size: cover;
   background-position: center;
-  text-align: center;
+  background-repeat: no-repeat;
+  background-image: url('../images/bg.png');
 }
 
 section.main-bg > .container /* Chamando exclusivamente oque esta dentro do container */
 {
-  position: relative;
   z-index: 2;
+  position: relative;
 }
 
 .overlay
 {
+  top: 0;
+  left: 0;
   z-index: 1;
-  position: absolute;
   width: 100%;
   height: 100%;
+  position: absolute;
   background: rgba(0, 0, 0, 0.4);
-  left: 0;
-  top: 0;
 }
 
 section.main-bg h2
 {
-  color: #57ceca;
   font-size: 40px;
+  color: #57ceca;
   font-weight: normal;
 }
 
 section.main-bg p
 {
-  text-align: left;
   color: #FFF;
   font-size: 20px;
   margin-top: 20px;
+  text-align: left;
 }
 
 section.diferenciais
@@ -157,9 +164,9 @@ section.diferenciais
 
 .line-text h2
 {
-  font-weight: normal;
   font-size: 30px;
   color: #57ceca;
+  font-weight: normal;
 }
 
 .icones-diferenciais
@@ -198,9 +205,9 @@ section.sobre-equipe > .container
 
 .sobre-container p
 {
+  color: #000;
   font-size: 17px;
   margin-top: 10px;
-  color: #000;
 }
 
 .avatar-box
@@ -210,25 +217,25 @@ section.sobre-equipe > .container
 
 .img-avatar
 {
-  display: inline-block;
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  display: inline-block;
   background-size: 100% 100%;
 }
 
 .descricao-avatar
 {
-  width: calc(100% -100px);
-  display: inline-block;
   padding: 10px 0;
+  display: inline-block;
+  width: calc(100% -100px);
 }
 
 .img-avatar h3
 {
   float: right;
-  font-weight: normal;
   font-style: italic;
+  font-weight: normal;
 }
 
 .descricao-avatar p
@@ -239,8 +246,8 @@ section.sobre-equipe > .container
 
 section.inscricao
 {
-  background: #57ceca;
   padding: 15px 0;
+  background: #57ceca;
 }
 
 h2.inscricao-texto
@@ -251,11 +258,11 @@ h2.inscricao-texto
 
 .inscricao-form input[type=text]
 {
-  width: calc(100% - 120px);
   height: 40px;
-  background: #FFF;
   border: none;
+  background: #FFF;
   display: inline-block;
+  width: calc(100% - 120px);
 }
 
 .inscricao-form input[type=submit]
@@ -292,22 +299,22 @@ section.cards
 .card-single p
 {
   margin: 10px 0;
-  font-weight: lighter;
   font-size: 15px;
+  font-weight: lighter;
   padding-bottom: 20px;  
 }
 
 footer.footer1
 {
-  background: #57ceca;
-  padding: 20px 0;
   color: #FFF;
+  padding: 20px 0;
+  background: #57ceca;
 }
 
 footer.footer1 h2
 {
-  font-weight: normal;
   font-size: 23px;
+  font-weight: normal;
 }
 
 footer.footer1 p
@@ -318,15 +325,15 @@ footer.footer1 p
 
 footer.footer1 a
 {
-  display: block;
   color: #FFF;
+  display: block;
 }
 
 div.group-icons a
 {
   font-size: 30px;
-  display: inline-block;
   margin:15px 10px;
+  display: inline-block;
 }
 
 footer.footer2
@@ -341,19 +348,19 @@ footer.footer2
 
 section.title-page
 {
-    padding: 30px;
-    width: 100%;
-    min-height: 200px;
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  width: 100%;
+  padding: 30px;
+  min-height: 200px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 section.title-page h2
 {
-  color: #57ceca;
   font-size: 35px;
+  color: #57ceca;
   font-weight: normal;
 }
 
@@ -394,10 +401,37 @@ section.sobre__noticia
 
 .sobre__noticia__single p
 {
-  padding:10px 15px;
   font-size: 17px;
+  padding:10px 15px;
   line-height: 20px;
   margin-bottom: 15px;
+}
+
+section.paralax
+{
+  width: 100%;
+  padding: 30px 0;
+  min-height: 300px;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url('../images/bg.png');
+}
+
+section.paralax h2.chamada-paralax
+{
+  font-size: 20px;
+  color: #8afdff;
+  padding: 5px 25px;
+  display: inline-block;
+  border: 1px solid #57ceca;
+}
+
+section.paralax p
+{
+  color: #FFF;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 768px)
@@ -436,12 +470,12 @@ section.sobre__noticia
 
   nav.menu-mobile ul
   {
-    width: 100%;
-    background: #FFF;
-    position: absolute;
     left: 0;
     top: 50px;
+    width: 100%;
     z-index: 999;
+    background: #FFF;
+    position: absolute;
     text-align: center;
   }
 
@@ -454,8 +488,8 @@ section.sobre__noticia
   nav.menu-mobile a
   {
     color: black;
-    text-decoration: none;
     display: block;
+    text-decoration: none;
   }
 
   .equipe-container
