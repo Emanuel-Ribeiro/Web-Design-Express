@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+  <link rel="stylesheet" href="./script.js">
+  <script src="https://kit.fontawesome.com/d85bd54e53.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+<body>
+  
+  <header class="header">
+    <div class="header-container"> <!--onde vao ficar todos os meus menus-->
+
+      <ul class="nav-list-desktop">
+
+        <li class="nav-item" style="padding-left: 10px;">
+          <a href="#" class="nav-logo">
+            <img src="./img/logo.png" style="width: 20px;">
+          </a><!--nav-logo-->
+        </li><!--nav-item-->
+
+        <li class="nav-item">
+          <a href="#" class="nav-link">Mac</a>
+        </li><!--nav-item-->
+
+        <li class="nav-item">
+          <a href="#" class="nav-link">iPad</a>
+        </li><!--nav-item-->
+
+        <li class="nav-item">
+          <a href="#" class="nav-link">iPhone</a>
+        </li><!--nav-item-->
+
+        <li class="nav-item">
+          <a href="#" class="nav-link">Watch</a>
+        </li><!--nav-item-->
+
+        <li class="nav-item">
+          <a href="#" class="nav-link">TV</a>
+        </li><!--nav-item-->
+
+        <li class="nav-item">
+          <a href="#" class="nav-link">Music</a>
+        </li><!--nav-item-->
+
+        <li class="nav-item">
+          <a href="#" class="nav-link">Suporte</a>
+        </li><!--nav-item-->
+
+        <li class="nav-item">
+          <a href="#" class="nav-search">
+            <img src="./img/search3.png " style="width: 20px;">
+          </a><!--nav-search-->
+        </li><!--nav-item-->
+
+        <li class="nav-item" style="padding-right: 10px;">
+          <a href="#" class="nav-bag">
+            <img src="./img/bag.jpg" style="width: 20px;">
+          </a><!--nav-bag-->
+        </li><!--nav-item-->
+
+      </ul><!--nav-list-desktop-->
+
+      <ul class="nav-mobile">
+
+        <li class="nav-item">
+          <a href="#" class="nav-hamburguer">
+            <div class="hamburguer hamburguer-active"></div><!--hamburguer hamburguer-active-->
+          </a><!--nav-hamburguer-->
+        </li><!--nav-item-->
+
+        <li class="nav-item" style="z-index: 999;">
+          <a href="#" class="nav-logo">
+            <img src="./img/logo.png" class="logo" style="width: 20px;">
+          </a><!--nav-logo-->
+        </li><!--nav-item-->
+
+        <li class="nav-item" style="padding-right: 10px;">
+          <a href="#" class="nav-bag">
+            <img src="./img/bag.jpg" style="width: 20px;">
+          </a><!--nav-bag-->
+        </li><!--nav-item-->
+
+      </ul><!--nav-mobile-->
+
+      <ul class="nav-list-mobile active">
+
+        <li class="nav-item-mobile">
+          <input type="text" class="search" placeholder="Search">
+        </li><!--nav-item-mobile-->
+
+        <li class="nav-item-mobile">
+          <a href="#" class="nav-link-mobile">Mac</a>
+        </li><!--nav-item-mobile-->
+
+        <li class="nav-item-mobile">
+          <a href="#" class="nav-link-mobile">iPad</a>
+        </li><!--nav-item-mobile-->
+
+        <li class="nav-item-mobile">
+          <a href="#" class="nav-link-mobile">iPhone</a>
+        </li><!--nav-item-mobile-->
+
+        <li class="nav-item-mobile">
+          <a href="#" class="nav-link-mobile">Watch</a>
+        </li><!--nav-item-mobile-->
+
+        <li class="nav-item-mobile">
+          <a href="#" class="nav-link-mobile">TV</a>
+        </li><!--nav-item-mobile-->
+
+        <li class="nav-item-mobile">
+          <a href="#" class="nav-link-mobile">Music</a>
+        </li><!--nav-item-mobile-->
+
+        <li class="nav-item-mobile">
+          <a href="#" class="nav-link-mobile">Suporte</a>
+        </li><!--nav-item-mobile-->
+
+      </ul><!--nav-list-mobile-->
+
+    </div><!--header-container-->
+  </header><!--header-->
+
+  <script>
+    $(document).ready(function(){
+      $(".hamburguer").click(function(){
+        $(this).toggleClass("hamburguer-active");
+        $(".nav-list-mobile").toggleClass("active");
+      })
+    })
+  </script>
+
+</body>
+</html>
