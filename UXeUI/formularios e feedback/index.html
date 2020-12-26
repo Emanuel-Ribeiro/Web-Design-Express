@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+  <script src="https://kit.fontawesome.com/d85bd54e53.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+  <title>Formulario</title>
+</head>
+<body>
+  
+  <section class="formulario">
+    <div class="container">
+    <form>
+
+      <div class="form-group">
+        <span></span>
+        <input type="text" name="nome" placeholder="Nome...">
+      </div><!--form-group-->
+
+      <div class="form-group">
+        <span></span>
+        <input type="email" name="email" placeholder="E-mail...">
+      </div><!--form-group-->
+
+      <div class="form-group">
+        <span></span>
+        <textarea name="mensagem" placeholder="Sua mensagem..."></textarea>
+      </div><!--form-group-->
+
+      <div class="form-group">
+        <input type="submit" value="Enviar!">
+      </div><!--form-group-->
+
+    </form>
+
+      <div class="box-sucesso">
+        Sua mensagem foi enviada com sucesso!
+      </div><!--box-sucesso-->
+
+    </div><!--container-->
+  </section><!--formulario-->
+
+  <script>
+    $(function()
+      {
+
+        $('form').submit(function()
+        {
+
+          var nome = $('[name=nome]').val();
+          var email = $('[name=email]').val();
+          var mensagem = $('[name=mensagem]').val();
+
+          var erro = false;
+
+          resetForm();
+
+          if(nome == '')
+          {
+            erro = true;
+            var el = $('[name=nome]');
+            el.parent().find('span').html('Por favor insira seu nome!')
+            el.css('border','2px solid red');
+          }
+
+          if(email == '')
+          {
+            erro = true;
+            var el = $('[name=email]');
+            el.parent().find('span').html('Por favor insira seu email!')
+            el.css('border','2px solid red');
+          }
+
+          if(mensagem == '')
+          {
+            erro = true;
+            var el = $('[name=mensagem]');
+            el.parent().find('span').html('Por favor insira sua mensagem!')
+            el.css('border','2px solid red');
+          }
+
+          if(erro = false)
+          {
+            $('.box-sucesso').fadeIn(function()
+            {
+              setTimeout(function()
+              {
+                $('.box-sucesso').fadeOut();
+              },5000);
+            });
+            $(this)[0].reset();
+          }
+
+          return false;
+        })
+
+        function resetForm()
+        {
+          $('input[type=text],textarea').css('border','1px solid #ccc');
+          $('input[type=email],textarea').css('border','1px solid #ccc');
+          $('span').html('');
+        }
+
+      })
+  </script>
+
+</body>
+</html>
